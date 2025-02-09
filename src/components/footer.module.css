@@ -14,3 +14,12 @@
 .item {
   margin: 20px 0;
 }
+@media (max-width: 418px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .item {
+    margin: 0px 0;
+  }
+}

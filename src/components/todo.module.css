@@ -1,7 +1,7 @@
 .list {
   background-color: white;
   border-radius: 8px;
-  width: 500px;
+  width: 50%;
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
@@ -28,12 +28,14 @@
 .itemName {
   font-weight: bold;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .line {
   border: 1px solid #f4f4f4;
 }
 .deletButton {
-  float: right;
   padding: 10px 20px;
   background-color: #f7ca18;
   border: none;
@@ -46,4 +48,21 @@
 }
 .completed {
   text-decoration: line-through;
+}
+
+@media (max-width: 854px) {
+  .list {
+    width: 80%;
+  }
+}
+@media (max-width: 418px) {
+  .list {
+    width: 97%;
+  }
+}
+@media (max-width: 328px) {
+  .itemName {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
